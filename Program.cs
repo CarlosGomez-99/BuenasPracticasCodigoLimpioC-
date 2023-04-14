@@ -24,7 +24,7 @@ namespace ToDo
                 }
                 else if (menuSelected == 3)
                 {
-                    ShowMenuTres();
+                    ShowMenuTaskList();
                 }
             } while (menuSelected != 4);
         }
@@ -90,7 +90,7 @@ namespace ToDo
             }
         }
 
-        public static void ShowMenuTres()
+        public static void ShowMenuTaskList()
         {
             if (ListTasks == null || ListTasks.Count == 0)
             {
