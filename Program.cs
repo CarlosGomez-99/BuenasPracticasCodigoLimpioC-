@@ -20,7 +20,7 @@ namespace ToDo
                 }
                 else if (menuSelected == 2)
                 {
-                    ShowMenuDos();
+                    ShowMenuRemove();
                 }
                 else if (menuSelected == 3)
                 {
@@ -46,7 +46,7 @@ namespace ToDo
             return Convert.ToInt32(line);
         }
 
-        public static void ShowMenuDos()
+        public static void ShowMenuRemove()
         {
             try
             {
