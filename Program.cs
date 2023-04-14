@@ -97,10 +97,8 @@ namespace ToDo
         static void ShowListTask()
         {
             Console.WriteLine("----------------------------------------");
-            for (int i = 0; i < ListTasks.Count; i++)
-            {
-                Console.WriteLine((i + 1) + ". " + ListTasks[i]);
-            }
+            var indexTask = 0;
+            ListTasks.ForEach(task => Console.WriteLine(++indexTask + ". " + task));
             Console.WriteLine("----------------------------------------");
         }
     }
