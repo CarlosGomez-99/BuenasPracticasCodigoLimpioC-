@@ -65,9 +65,9 @@ namespace ToDo
                 {
                     if (ListTasks.Count > 0)
                     {
-                        string task = ListTasks[indexToRemove];
+                        string nameTask = ListTasks[indexToRemove];
                         ListTasks.RemoveAt(indexToRemove);
-                        Console.WriteLine("Tarea " + task + " eliminada");
+                        Console.WriteLine("Tarea " + nameTask + " eliminada");
                     }
                 }
             }
@@ -81,8 +81,8 @@ namespace ToDo
             try
             {
                 Console.WriteLine("Ingrese el nombre de la tarea: ");
-                string task = Console.ReadLine();
-                ListTasks.Add(task);
+                string nameTask = Console.ReadLine();
+                ListTasks.Add(nameTask);
                 Console.WriteLine("Tarea registrada");
             }
             catch (Exception)
