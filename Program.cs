@@ -67,7 +67,7 @@ namespace ToDo
                     {
                         string nameTask = ListTasks[indexToRemove];
                         ListTasks.RemoveAt(indexToRemove);
-                        Console.WriteLine("Tarea " + nameTask + " eliminada");
+                        Console.WriteLine($"Tarea {nameTask} eliminada");
                     }
                 }
             }
@@ -114,7 +114,7 @@ namespace ToDo
         {
             Console.WriteLine("----------------------------------------");
             var indexTask = 0;
-            ListTasks.ForEach(task => Console.WriteLine(++indexTask + ". " + task));
+            ListTasks.ForEach(task => Console.WriteLine($"{++indexTask} . {task}"));
             Console.WriteLine("----------------------------------------");
         }
     }
