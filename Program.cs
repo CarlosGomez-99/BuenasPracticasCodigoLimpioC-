@@ -5,11 +5,10 @@ namespace ToDo
 {
     internal class Program
     {
-        public static List<string> ListTasks { get; set; }
+        public static List<string> ListTasks { get; set; }= new List<string>();
 
         static void Main(string[] args)
         {
-            ListTasks = new List<string>();
             int menuSelected = 0;
             do
             {
