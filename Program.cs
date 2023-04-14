@@ -5,7 +5,7 @@ namespace ToDo
 {
     internal class Program
     {
-        public static List<string> ListTasks { get; set; }= new List<string>();
+        public static List<string> ListTasks { get; set; } = new List<string>();
 
         static void Main(string[] args)
         {
@@ -100,13 +100,13 @@ namespace ToDo
 
         public static void ShowMenuTaskList()
         {
-            if (ListTasks == null || ListTasks.Count == 0)
+            if (ListTasks?.Count > 0)
             {
-                Console.WriteLine("No hay tareas por realizar");
+                ShowListTask();
             }
             else
             {
-                ShowListTask();
+                Console.WriteLine("No hay tareas por realizar");
             }
         }
         static void ShowListTask()
