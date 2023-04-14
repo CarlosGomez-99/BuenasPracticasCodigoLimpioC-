@@ -42,8 +42,8 @@ namespace ToDo
             Console.WriteLine("4. Salir");
 
             // Read line
-            string line = Console.ReadLine();
-            return Convert.ToInt32(line);
+            string readLine = Console.ReadLine();
+            return Convert.ToInt32(readLine);
         }
 
         public static void ShowMenuRemove()
@@ -58,9 +58,9 @@ namespace ToDo
                 }
                 Console.WriteLine("----------------------------------------");
 
-                string line = Console.ReadLine();
+                string readLine = Console.ReadLine();
                 // Remove one position
-                int indexToRemove = Convert.ToInt32(line) - 1;
+                int indexToRemove = Convert.ToInt32(readLine) - 1;
                 if (indexToRemove > -1)
                 {
                     if (ListTasks.Count > 0)
